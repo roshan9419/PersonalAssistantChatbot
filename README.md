@@ -205,5 +205,19 @@ It is an Personal Assistant, capable to perform many tasks with some unique feat
 
 
 ### To get started, run SECURITY.py file to register your face and to use it...  
+
 ##### Watch the demo here 👇👇👇
-https://www.youtube.com/watch?v=tbw7VyBGSw0&t=235s
+https://www.youtube.com/watch?v=tbw7VyBGSw0&t=235s  
+
+## Let's contribute together and make this chatbot to be more advanced AI Chatbot  
+
+
+## Authors
+
+ **roshan9419**
+
+See also the list of [contributors](https://github.com/roshan9419/PersonalAssistantChatbot/graphs/contributors) who have participated in this project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
