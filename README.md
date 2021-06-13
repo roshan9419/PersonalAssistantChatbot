@@ -209,8 +209,9 @@ It is an Personal Assistant, capable to perform many tasks with some unique feat
 ##### Watch the demo here 👇👇👇
 https://www.youtube.com/watch?v=tbw7VyBGSw0&t=235s  
 
-## Let's contribute together and make this chatbot to be more advanced AI Chatbot  
 
+
+## Let's contribute together and make this chatbot to be more advanced AI Chatbot 🧐  
 
 ## Authors
 
