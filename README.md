@@ -1,5 +1,7 @@
 # PersonalAssistant
-It is an Personal Assistant, capable to perform many tasks with some unique features, that you haven'e seen yet....
+It is an Personal Assistant, capable to perform many tasks with some unique features, that you haven'e seen yet....  
+
+![alt text](thumbnail.jpg)
 
 ## Features / Tasks it can perform:  
 1. Game (eg, Rock Paper Scissor with GUI)  
