@@ -219,7 +219,7 @@ pyaudio not installing
 ```
 
 (USE PYTHON <= 3.8 WHICH SUPPORTS ALL THE LIBRARIES)
-Raise an Issue ticket if you have any other problems 
+Raise an Issue ticket if you have any other problems  <br><br><br>
 
 ## Let's contribute together and make this chatbot to be more advanced AI Chatbot 🧐  
 
