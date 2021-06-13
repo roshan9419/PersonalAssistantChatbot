@@ -211,7 +211,15 @@ It is an Personal Assistant, capable to perform many tasks with some unique feat
 ##### Watch the demo here 👇👇👇
 https://www.youtube.com/watch?v=tbw7VyBGSw0  
 
+## Common Installation Issues  
+```
+pyaudio not installing  
+  1. Download the pyaudio wheel version from https://www.lfd.uci.edu/~gohlke/pythonlibs/ (eg, if you have python version 3.7, download the file containing cp37)
+  2. Install it using (eg, pip install PyAudio‑0.2.11‑cp37‑cp37m‑win_amd64.whl)
+```
 
+(USE PYTHON <= 3.8 WHICH SUPPORTS ALL THE LIBRARIES)
+Raise an Issue ticket if you have any other problems 
 
 ## Let's contribute together and make this chatbot to be more advanced AI Chatbot 🧐  
 
