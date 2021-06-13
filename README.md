@@ -207,7 +207,7 @@ It is an Personal Assistant, capable to perform many tasks with some unique feat
 ### To get started, run SECURITY.py file to register your face and to use it...  
 
 ##### Watch the demo here 👇👇👇
-https://www.youtube.com/watch?v=tbw7VyBGSw0&t=235s  
+https://www.youtube.com/watch?v=tbw7VyBGSw0  
 
 
 
