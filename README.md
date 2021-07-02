@@ -42,9 +42,9 @@ It is an Personal Assistant, capable to perform many tasks with some unique feat
   pip install opencv-contrib-python  
   pip install opencv  
   pip install wikipedia  
-  pip install webbrowser  
+  pip install webbrowser [Available with installer] 
   pip install bs4  
-  pip install smtplib  
+  pip install smtplib [Available with installer]  
   pip install youtube_search  
   pip install wmi  
   pip install geopy  
