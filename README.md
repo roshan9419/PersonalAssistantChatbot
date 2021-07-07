@@ -1,4 +1,6 @@
-# PersonalAssistant
+# PersonalAssistant  
+[![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/roshan9419)
+[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/roshan9419) [![Made With Love](https://img.shields.io/badge/Made%20With-Love-orange.svg)](https://github.com/roshan9419)  
 It is an Personal Assistant, capable to perform many tasks with some unique features, that you haven'e seen yet....  
 
 ![alt text](thumbnail.jpg)
