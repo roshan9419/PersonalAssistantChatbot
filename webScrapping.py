@@ -288,7 +288,7 @@ def downloadImage(query, n=4):
 	src = result.content
 
 	soup = BeautifulSoup(src, 'html.parser')
-	imgTags = soup.find_all('img', class_='t0fcAb')
+	imgTags = soup.find_all('img', class_='yWs4tf') # old class name -> t0fcAb (Update this)
 
 	if os.path.exists('Downloads')==False:
 		os.mkdir('Downloads')
