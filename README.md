@@ -49,7 +49,7 @@
   pip install webbrowser [Available with installer]  
   pip install bs4  
   pip install smtplib [Available with installer]  
-  pip install youtube_search  
+  pip install youtube-search-python
   pip install wmi  
   pip install geopy  
   pip install googletrans==3.1.0a0  

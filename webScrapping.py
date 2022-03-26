@@ -237,13 +237,16 @@ def jokes():
 
 
 def youtube(query):
-	from youtube_search import YoutubeSearch
 	query = query.replace('play',' ')
 	query = query.replace('on youtube',' ')
 	query = query.replace('youtube',' ')
-	print("Pahuch Gya")
-	results = YoutubeSearch(query,max_results=1).to_dict()
-	print("Link mil gya")
+
+	print("Searching for videos...")
+	from youtubesearchpython import VideosSearch
+	videosSearch = VideosSearch(query, limit = 1)
+	results = videosSearch.result()['result']
+	print("Finished searching!")
+
 	webbrowser.open('https://www.youtube.com/watch?v=' + results[0]['id'])
 	return "Enjoy..."
 
