@@ -55,6 +55,8 @@
   pip install googletrans==3.1.0a0  
   pip install python-dotenv  
 
+## ***⚠ NOTE: This project is currently supported on Windows OS only***
+
 ## Environment
 ```sh
 # create .env file and add these two properties
