@@ -49,11 +49,13 @@
   pip install webbrowser [Available with installer]  
   pip install bs4  
   pip install smtplib [Available with installer]  
-  pip install youtube-search-python
+  pip install youtube-search-python  
   pip install wmi  
   pip install geopy  
   pip install googletrans==3.1.0a0  
   pip install python-dotenv  
+
+## ***⚠ NOTE: This project is currently supported on Windows OS only***
 
 ## Environment
 ```sh
