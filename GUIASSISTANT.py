@@ -110,13 +110,6 @@ def ChangeSettings(write=False):
 
 if os.path.exists('userData/settings.pck')==False:
 	ChangeSettings(True)
-	
-def getChatColor():
-	global chatBgColor
-	chatBgColor = myColor[1]
-	colorbar['bg'] = chatBgColor
-	chat_frame['bg'] = chatBgColor
-	root1['bg'] = chatBgColor
 
 def changeTheme():
 	global background, textColor, AITaskStatusLblBG, KCS_IMG, botChatText, botChatTextBg, userChatTextBg, chatBgColor
@@ -570,9 +563,9 @@ def showSingleImage(type, data=None):
 		img0 = ImageTk.PhotoImage(Image.open('Downloads/0.jpg').resize((90,110), Image.ANTIALIAS))
 	except:
 		pass
-	img1 = ImageTk.PhotoImage(Image.open('extrafiles/images/heads.jpg').resize((220,200), Image.ANTIALIAS))
-	img2 = ImageTk.PhotoImage(Image.open('extrafiles/images/tails.jpg').resize((220,200), Image.ANTIALIAS))
-	img4 = ImageTk.PhotoImage(Image.open('extrafiles/images/WeatherImage.png'))
+	img1 = ImageTk.PhotoImage(Image.open('assets/images/heads.jpg').resize((220,200), Image.ANTIALIAS))
+	img2 = ImageTk.PhotoImage(Image.open('assets/images/tails.jpg').resize((220,200), Image.ANTIALIAS))
+	img4 = ImageTk.PhotoImage(Image.open('assets/images/WeatherImage.png'))
 
 	if type=="weather":
 		weather = Frame(chat_frame)
@@ -590,7 +583,7 @@ def showSingleImage(type, data=None):
 	elif type=="tail":
 		Label(chat_frame, image=img2, bg='#EAEAEA').pack(anchor='w')
 	else:
-		img3 = ImageTk.PhotoImage(Image.open('extrafiles/images/dice/'+type+'.jpg').resize((200,200), Image.ANTIALIAS))
+		img3 = ImageTk.PhotoImage(Image.open('assets/images/dice/'+type+'.jpg').resize((200,200), Image.ANTIALIAS))
 		Label(chat_frame, image=img3, bg='#EAEAEA').pack(anchor='w')
 	
 def showImages(query):
@@ -628,8 +621,8 @@ def WAEMPOPUP(Service='None', rec='Reciever'):
 	PopUProot.title(f'{Service} Service')
 	PopUProot.configure(bg='white')
 
-	if Service=="WhatsApp": PopUProot.iconbitmap("extrafiles/images/whatsapp.ico")
-	else: PopUProot.iconbitmap("extrafiles/images/email.ico")
+	if Service=="WhatsApp": PopUProot.iconbitmap("assets/images/whatsapp.ico")
+	else: PopUProot.iconbitmap("assets/images/email.ico")
 	w_width, w_height = 410, 200
 	s_width, s_height = PopUProot.winfo_screenwidth(), PopUProot.winfo_screenheight()
 	x, y = (s_width/2)-(w_width/2), (s_height/2)-(w_height/2)
@@ -685,10 +678,10 @@ def UpdateIMAGE():
 	u = UserData()
 	u.extractData()
 	ownerPhoto = u.getUserPhoto()
-	userProfileImg = ImageTk.PhotoImage(Image.open("extrafiles/images/avatars/a"+str(ownerPhoto)+".png").resize((120, 120)))
+	userProfileImg = ImageTk.PhotoImage(Image.open("assets/images/avatars/a"+str(ownerPhoto)+".png").resize((120, 120)))
 
 	userPhoto['image'] = userProfileImg
-	userIcon = PhotoImage(file="extrafiles/images/avatars/ChatIcons/a"+str(ownerPhoto)+".png")
+	userIcon = PhotoImage(file="assets/images/avatars/ChatIcons/a"+str(ownerPhoto)+".png")
 
 def SelectAvatar():	
 	Thread(target=UpdateIMAGE).start()
@@ -770,8 +763,8 @@ if __name__ == '__main__':
 	# VoiceModeFrame.pack_forget()
 	TextModeFrame.pack_forget()
 
-	cblLightImg = PhotoImage(file='extrafiles/images/centralButton.png')
-	cblDarkImg = PhotoImage(file='extrafiles/images/centralButton1.png')
+	cblLightImg = PhotoImage(file='assets/images/centralButton.png')
+	cblDarkImg = PhotoImage(file='assets/images/centralButton1.png')
 	if KCS_IMG==1: cblimage=cblDarkImg
 	else: cblimage=cblLightImg
 	cbl = Label(VoiceModeFrame, fg='white', image=cblimage, bg='#dfdfdf')
@@ -780,9 +773,9 @@ if __name__ == '__main__':
 	AITaskStatusLbl.place(x=140,y=32)
 	
 	#Settings Button
-	sphLight = PhotoImage(file = "extrafiles/images/setting.png")
+	sphLight = PhotoImage(file = "assets/images/setting.png")
 	sphLight = sphLight.subsample(2,2)
-	sphDark = PhotoImage(file = "extrafiles/images/setting1.png")
+	sphDark = PhotoImage(file = "assets/images/setting1.png")
 	sphDark = sphDark.subsample(2,2)
 	if KCS_IMG==1: sphimage=sphDark
 	else: sphimage=sphLight
@@ -790,9 +783,9 @@ if __name__ == '__main__':
 	settingBtn.place(relx=1.0, y=30,x=-20, anchor="ne")	
 	
 	#Keyboard Button
-	kbphLight = PhotoImage(file = "extrafiles/images/keyboard.png")
+	kbphLight = PhotoImage(file = "assets/images/keyboard.png")
 	kbphLight = kbphLight.subsample(2,2)
-	kbphDark = PhotoImage(file = "extrafiles/images/keyboard1.png")
+	kbphDark = PhotoImage(file = "assets/images/keyboard1.png")
 	kbphDark = kbphDark.subsample(2,2)
 	if KCS_IMG==1: kbphimage=kbphDark
 	else: kbphimage=kbphLight
@@ -800,13 +793,13 @@ if __name__ == '__main__':
 	kbBtn.place(x=25, y=30)
 
 	#Mic
-	micImg = PhotoImage(file = "extrafiles/images/mic.png")
+	micImg = PhotoImage(file = "assets/images/mic.png")
 	micImg = micImg.subsample(2,2)
 	micBtn = Button(TextModeFrame,image=micImg,height=30,width=30, bg='#dfdfdf',borderwidth=0,activebackground="#dfdfdf", command=changeChatMode)
 	micBtn.place(relx=1.0, y=30,x=-20, anchor="ne")	
 	
 	#Text Field
-	TextFieldImg = PhotoImage(file='extrafiles/images/textField.png')
+	TextFieldImg = PhotoImage(file='assets/images/textField.png')
 	UserFieldLBL = Label(TextModeFrame, fg='white', image=TextFieldImg, bg='#dfdfdf')
 	UserFieldLBL.pack(pady=17, side=LEFT, padx=10)
 	UserField = Entry(TextModeFrame, fg='white', bg='#203647', font=('Montserrat', 16), bd=6, width=22, relief=FLAT)
@@ -815,8 +808,8 @@ if __name__ == '__main__':
 	UserField.bind('<Return>', keyboardInput)
 	
 	#User and Bot Icon
-	userIcon = PhotoImage(file="extrafiles/images/avatars/ChatIcons/a"+str(ownerPhoto)+".png")
-	botIcon = PhotoImage(file="extrafiles/images/assistant2.png")
+	userIcon = PhotoImage(file="assets/images/avatars/ChatIcons/a"+str(ownerPhoto)+".png")
+	botIcon = PhotoImage(file="assets/images/assistant2.png")
 	botIcon = botIcon.subsample(2,2)
 	
 
@@ -829,13 +822,13 @@ if __name__ == '__main__':
 	separator = ttk.Separator(root2, orient='horizontal')
 	separator.pack(fill=X)
 	#User Photo
-	userProfileImg = Image.open("extrafiles/images/avatars/a"+str(ownerPhoto)+".png")
+	userProfileImg = Image.open("assets/images/avatars/a"+str(ownerPhoto)+".png")
 	userProfileImg = ImageTk.PhotoImage(userProfileImg.resize((120, 120)))
 	userPhoto = Button(root2, image=userProfileImg, bg=background, bd=0, relief=FLAT, activebackground=background, command=SelectAvatar)
 	userPhoto.pack(pady=(20, 5))
 
 	#Change Photo
-	chngPh = ImageTk.PhotoImage(Image.open("extrafiles/images/avatars/changephoto2.png").resize((120, 120)))
+	chngPh = ImageTk.PhotoImage(Image.open("assets/images/avatars/changephoto2.png").resize((120, 120)))
 	
 	userPhoto.bind('<Enter>', onhover)
 	userPhoto.bind('<Leave>', onleave)
@@ -888,7 +881,7 @@ if __name__ == '__main__':
 
 	chooseChatLbl = Label(settingsFrame, text='Chat Background', font=('Arial', 13), fg=textColor, bg=background)
 	chooseChatLbl.place(x=0,y=180)
-	cimg = PhotoImage(file = "extrafiles/images/colorchooser.png")
+	cimg = PhotoImage(file = "assets/images/colorchooser.png")
 	cimg = cimg.subsample(3,3)
 	colorbar = Label(settingsFrame, bd=3, width=18, height=1, bg=chatBgColor)
 	colorbar.place(x=150, y=180)
@@ -911,6 +904,6 @@ if __name__ == '__main__':
 	except Exception as e:
 		print('System is Offline...')
 	
-	root.iconbitmap('extrafiles/images/assistant2.ico')
+	root.iconbitmap('assets/images/assistant2.ico')
 	raise_frame(root1)
 	root.mainloop()

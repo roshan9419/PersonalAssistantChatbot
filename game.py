@@ -149,20 +149,20 @@ def rockPaperScissorWindow():
 	root.geometry('%dx%d+%d+%d' % (w_width,w_height,x,y-30)) #center location of the screen
 	root.configure(bg='white')
 
-	rockImg = ImageTk.PhotoImage(Image.open('extrafiles/ROCKPAPERSCISSOR/1.jpg'))
-	paperImg = ImageTk.PhotoImage(Image.open('extrafiles/ROCKPAPERSCISSOR/2.jpg'))
-	scissorImg = ImageTk.PhotoImage(Image.open('extrafiles/ROCKPAPERSCISSOR/3.jpg'))
-	grayImg = ImageTk.PhotoImage(Image.open('extrafiles/ROCKPAPERSCISSOR/grayQuestion.png'))
-	orangeImg = ImageTk.PhotoImage(Image.open('extrafiles/ROCKPAPERSCISSOR/orangeQuestion.jpg'))
-	winImg = ImageTk.PhotoImage(Image.open('extrafiles/ROCKPAPERSCISSOR/win.jpg'))
-	loseImg = ImageTk.PhotoImage(Image.open('extrafiles/ROCKPAPERSCISSOR/lose.jpg'))
-	drawImg = ImageTk.PhotoImage(Image.open('extrafiles/ROCKPAPERSCISSOR/draw.jpg'))
+	rockImg = ImageTk.PhotoImage(Image.open('assets/ROCKPAPERSCISSOR/1.jpg'))
+	paperImg = ImageTk.PhotoImage(Image.open('assets/ROCKPAPERSCISSOR/2.jpg'))
+	scissorImg = ImageTk.PhotoImage(Image.open('assets/ROCKPAPERSCISSOR/3.jpg'))
+	grayImg = ImageTk.PhotoImage(Image.open('assets/ROCKPAPERSCISSOR/grayQuestion.png'))
+	orangeImg = ImageTk.PhotoImage(Image.open('assets/ROCKPAPERSCISSOR/orangeQuestion.jpg'))
+	winImg = ImageTk.PhotoImage(Image.open('assets/ROCKPAPERSCISSOR/win.jpg'))
+	loseImg = ImageTk.PhotoImage(Image.open('assets/ROCKPAPERSCISSOR/lose.jpg'))
+	drawImg = ImageTk.PhotoImage(Image.open('assets/ROCKPAPERSCISSOR/draw.jpg'))
 
 	toplbl = Label(root, text='Total Score', font=('Arial Bold', 20), fg='#FE8A28', bg='white').pack()
 	totalLabel = Label(root, text='0   |   0', font=('Arial Bold', 15), fg='#1F1F1F', bg='white')
 	totalLabel.pack()
 	#bottom image
-	img = ImageTk.PhotoImage(Image.open('extrafiles/ROCKPAPERSCISSOR/rockPaperScissor.jpg'))
+	img = ImageTk.PhotoImage(Image.open('assets/ROCKPAPERSCISSOR/rockPaperScissor.jpg'))
 	downLbl = Label(root, image=img)
 	downLbl.pack(side=BOTTOM)
 	
@@ -179,7 +179,7 @@ def rockPaperScissorWindow():
 	botMoveLBL.place(x=12, y=150)
 
 	Thread(target=playRock).start()
-	root.iconbitmap("extrafiles/images/game.ico")
+	root.iconbitmap("assets/images/game.ico")
 	root.mainloop()
 
 def isContain(text, lst):
@@ -192,12 +192,12 @@ def isContain(text, lst):
 def play(gameName):
 	speak('')
 	if isContain(gameName, ['dice','die']):
-		playsound.playsound('extrafiles/audios/dice.mp3')
+		playsound.playsound('assets/audios/dice.mp3')
 		result = "You got " + str(randint(1,6))
 		return result
 
 	elif isContain(gameName, ['coin']):
-		playsound.playsound('extrafiles/audios/coin.mp3')
+		playsound.playsound('assets/audios/coin.mp3')
 		p = randint(-10,10)
 		if p>0: return "You got Head"
 		else: return "You got Tail"

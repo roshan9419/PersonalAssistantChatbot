@@ -189,7 +189,7 @@ if __name__ == '__main__':
 	########  MAIN SCREEN  #########
 	################################
 
-	image1 = Image.open('extrafiles/images/home2.jpg')
+	image1 = Image.open('assets/images/home2.jpg')
 	image1 = image1.resize((300,250))
 	defaultImg1 = ImageTk.PhotoImage(image1)
 
@@ -223,7 +223,7 @@ if __name__ == '__main__':
 	########  FACE ADD SCREEN  #######
 	##################################
 
-	image2 = Image.open('extrafiles/images/defaultFace4.png')
+	image2 = Image.open('assets/images/defaultFace4.png')
 	image2 = image2.resize((300, 250))
 	defaultImg2 = ImageTk.PhotoImage(image2)
 
@@ -283,28 +283,28 @@ if __name__ == '__main__':
 	avatarContainer.pack(pady=10)
 	size = 100
 
-	avtr1 = Image.open('extrafiles/images/avatars/a1.png')
+	avtr1 = Image.open('assets/images/avatars/a1.png')
 	avtr1 = avtr1.resize((size, size))
 	avtr1 = ImageTk.PhotoImage(avtr1)
-	avtr2 = Image.open('extrafiles/images/avatars/a2.png')
+	avtr2 = Image.open('assets/images/avatars/a2.png')
 	avtr2 = avtr2.resize((size, size))
 	avtr2 = ImageTk.PhotoImage(avtr2)
-	avtr3 = Image.open('extrafiles/images/avatars/a3.png')
+	avtr3 = Image.open('assets/images/avatars/a3.png')
 	avtr3 = avtr3.resize((size, size))
 	avtr3 = ImageTk.PhotoImage(avtr3)
-	avtr4 = Image.open('extrafiles/images/avatars/a4.png')
+	avtr4 = Image.open('assets/images/avatars/a4.png')
 	avtr4 = avtr4.resize((size, size))
 	avtr4 = ImageTk.PhotoImage(avtr4)
-	avtr5 = Image.open('extrafiles/images/avatars/a5.png')
+	avtr5 = Image.open('assets/images/avatars/a5.png')
 	avtr5 = avtr5.resize((size, size))
 	avtr5 = ImageTk.PhotoImage(avtr5)
-	avtr6 = Image.open('extrafiles/images/avatars/a6.png')
+	avtr6 = Image.open('assets/images/avatars/a6.png')
 	avtr6 = avtr6.resize((size, size))
 	avtr6 = ImageTk.PhotoImage(avtr6)
-	avtr7 = Image.open('extrafiles/images/avatars/a7.png')
+	avtr7 = Image.open('assets/images/avatars/a7.png')
 	avtr7 = avtr7.resize((size, size))
 	avtr7 = ImageTk.PhotoImage(avtr7)
-	avtr8 = Image.open('extrafiles/images/avatars/a8.png')
+	avtr8 = Image.open('assets/images/avatars/a8.png')
 	avtr8 = avtr8.resize((size, size))
 	avtr8 = ImageTk.PhotoImage(avtr8)
 
@@ -350,6 +350,6 @@ if __name__ == '__main__':
 
 	Button(root4, text='     OK     ', bg='#0475BB', fg='white',font=('Arial Bold', 18), bd=0, relief=FLAT, command=lambda:quit()).pack(pady=50)
 
-	root.iconbitmap('extrafiles/images/assistant2.ico')
+	root.iconbitmap('assets/images/assistant2.ico')
 	raise_frame(root1)
 	root.mainloop()

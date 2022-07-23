@@ -2,7 +2,7 @@ from difflib import get_close_matches
 import json
 from random import choice
 
-data = json.load(open('extrafiles/dict_data.json', encoding='utf-8'))
+data = json.load(open('assets/dict_data.json', encoding='utf-8'))
 
 def getMeaning(word):
 	if word in data:
