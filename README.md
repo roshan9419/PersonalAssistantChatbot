@@ -7,6 +7,11 @@
 
 ![alt text](thumbnail.jpg)
 
+
+#### Watch the demo here 👇👇👇
+https://www.youtube.com/watch?v=tbw7VyBGSw0  
+
+
 ## Features / Tasks it can perform:  
 1. Game (eg, Rock Paper Scissor with GUI)  
 2. Search anything from wikipedia, google maps, etc  
@@ -36,25 +41,26 @@
 26. Volume Control  
 
 ## Modules Requirements and Installation:  
-  pip install SpeechRecognition  
-  pip install pyttsx3  
-  pip install playsound  
-  pip install Pillow  
-  pip install pyscreenshot  
-  pip install pynput  
-  pip install psutil  
-  pip install opencv-contrib-python  
-  pip install opencv  
-  pip install wikipedia  
-  pip install webbrowser [Available with installer]  
-  pip install bs4  
-  pip install smtplib [Available with installer]  
-  pip install youtube-search-python  
-  pip install wmi  
-  pip install geopy  
-  pip install googletrans==3.1.0a0  
-  pip install python-dotenv  
-
+```sh
+pip install SpeechRecognition  
+pip install pyttsx3  
+pip install playsound  
+pip install Pillow  
+pip install pyscreenshot  
+pip install pynput  
+pip install psutil  
+pip install opencv-contrib-python  
+pip install opencv  
+pip install wikipedia  
+pip install webbrowser [Available with installer]  
+pip install bs4  
+pip install smtplib [Available with installer]  
+pip install youtube-search-python  
+pip install wmi  
+pip install geopy  
+pip install googletrans==3.1.0a0  
+pip install python-dotenv  
+```
 ## ***⚠ NOTE: This project is currently supported on Windows OS only***
 
 ## Environment
@@ -62,6 +68,11 @@
 # create .env file and add these two properties
 MAIL_USERNAME="myemail@gmail.com"
 MAIL_PASSWORD="mypassword"
+```
+
+### To get started run main.py  
+```sh
+python main.py
 ```
 
 ## Math Calculations 
@@ -74,7 +85,6 @@ MAIL_PASSWORD="mypassword"
 - what is the log of 1000  
 
 ## Files Creation  
-- Create a empty file  
 - Create a Python file  
 - Create a Java file  
 - Create a PowerPoint file  
@@ -219,11 +229,6 @@ MAIL_PASSWORD="mypassword"
 - I'm sorry  
 
 
-### To get started, run SECURITY.py file to register your face and to use it...  
-
-##### Watch the demo here 👇👇👇
-https://www.youtube.com/watch?v=tbw7VyBGSw0  
-
 ## Common Installation Issues  
 ```
 pyaudio not installing  
@@ -238,11 +243,10 @@ Raise an Issue ticket if you have any other problems  <br><br><br>
 If you want only Chatbot and no face recognition then, download it from here:  
 https://drive.google.com/file/d/1h-v6Ub5E2BMy6LTgl398lmoTlhr0KWvj/view?usp=sharing
 
-## Let's contribute together and make this chatbot to be more advanced AI Chatbot 🧐  
 
 ## Authors
 
- **roshan9419**
+ **roshan9419** 🧐 
 
 See also the list of [contributors](https://github.com/roshan9419/PersonalAssistantChatbot/graphs/contributors) who have participated in this project.
 
