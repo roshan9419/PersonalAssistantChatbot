@@ -41,7 +41,9 @@ def startLogin():
 			loginStatus['text'] = 'UNLOCKED'
 			loginStatus['fg'] = 'green'
 			faceStatus['text']='(Logged In)'
-			os.system('python modules/gui_assistant.py')
+			root1.destroy
+			while True:
+				os.system('python modules/gui_assistant.py')
 		else:
 			print('Error Occurred')
 
